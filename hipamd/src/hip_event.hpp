@@ -33,6 +33,8 @@ protected:
       : userData_(userData) {}
 
   virtual void CL_CALLBACK callback() = 0;
+
+  virtual ~StreamCallback() = default;
 };
 
 class StreamAddCallback : public StreamCallback {
